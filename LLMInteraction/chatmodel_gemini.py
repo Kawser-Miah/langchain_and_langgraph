@@ -4,8 +4,8 @@ from pathlib import Path
 import os
 
 # Load .env from the project root
-env_path = Path(__file__).parent.parent / '.env'
-load_dotenv(dotenv_path=env_path)
+# env_path = Path(__file__).parent.parent / '.env'
+load_dotenv()
 
 try:
     api_key = os.getenv("GOOGLE_API_KEY")
